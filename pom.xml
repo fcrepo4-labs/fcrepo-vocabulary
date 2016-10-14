@@ -35,6 +35,12 @@
     <!-- dependencies -->
     <commons-rdf.version>0.2.0-incubating</commons-rdf.version>
 
+    <!-- testing -->
+    <jena.version>3.1.0</jena.version>
+    <junit.version>4.11</junit.version>
+    <logback.version>1.1.2</logback.version>
+    <slf4j.version>1.7.7</slf4j.version>
+
     <!-- osgi -->
     <osgi.export.packages>org.fcrepo.vocabulary</osgi.export.packages>
     <osgi.import.packages>*</osgi.import.packages>
@@ -59,6 +65,44 @@
       <artifactId>commons-rdf-simple</artifactId>
       <version>${commons-rdf.version}</version>
     </dependency>
+
+    <!-- logging -->
+    <dependency>
+      <groupId>org.slf4j</groupId>
+      <artifactId>slf4j-api</artifactId>
+      <version>${slf4j.version}</version>
+      <scope>test</scope>
+    </dependency>
+
+    <!-- testing -->
+    <dependency>
+      <groupId>org.apache.jena</groupId>
+      <artifactId>jena-core</artifactId>
+      <version>${jena.version}</version>
+      <scope>test</scope>
+    </dependency>
+
+    <dependency>
+      <groupId>org.apache.jena</groupId>
+      <artifactId>jena-arq</artifactId>
+      <version>${jena.version}</version>
+      <scope>test</scope>
+    </dependency>
+
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>${junit.version}</version>
+      <scope>test</scope>
+    </dependency>
+
+    <dependency>
+      <groupId>ch.qos.logback</groupId>
+      <artifactId>logback-classic</artifactId>
+      <version>${logback.version}</version>
+      <scope>test</scope>
+    </dependency>
+
   </dependencies>
 
   <build>
@@ -75,6 +119,10 @@
 
       <plugin>
         <artifactId>maven-compiler-plugin</artifactId>
+      </plugin>
+
+      <plugin>
+        <artifactId>maven-surefire-plugin</artifactId>
       </plugin>
 
       <plugin>
