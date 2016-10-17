@@ -65,13 +65,12 @@ public abstract class AbstractVocabularyTest {
         final Model model = createDefaultModel();
         read(model, namespace());
 
-        final Set<String> subjects = fields().map(field -> namespace() + field).collect(toSet());
+        final Set<String> subjects = fields().map(namespace()::concat).collect(toSet());
 
         assertTrue("Unable to extract field definitions!", subjects.size() > 0);
 
         model.listSubjects().mapWith(Resource::getURI).filterKeep(Objects::nonNull)
-                .filterKeep(uri -> uri.startsWith(namespace()))
-                .filterDrop(namespace()::equals)
+                .filterKeep(uri -> uri.startsWith(namespace())).filterDrop(namespace()::equals)
                 .filterDrop(subjects::contains).forEachRemaining(uri -> {
             LOGGER.warn("{} not defined in {} class", uri, vocabulary().getName());
         });
