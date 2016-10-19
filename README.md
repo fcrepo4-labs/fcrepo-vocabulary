@@ -9,6 +9,7 @@ Specific vocabularies include:
   * `WebAC`: `http://fedora.info/definitions/v4/webac#`
   * `LDP`: `http://www.w3.org/ns/ldp#`
   * `PROV`: `http://www.w3.org/ns/prov#`
+  * `ACL`: `http://www.w3.org/ns/auth/acl#`
 
 ## Building
 
