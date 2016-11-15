@@ -18,8 +18,8 @@
 package org.fcrepo.vocabulary;
 
 import org.apache.commons.rdf.api.IRI;
-import org.apache.commons.rdf.api.RDFTermFactory;
-import org.apache.commons.rdf.simple.SimpleRDFTermFactory;
+import org.apache.commons.rdf.api.RDF;
+import org.apache.commons.rdf.simple.SimpleRDF;
 
 /**
  * RDF Terms from the Fedora WebAC Vocabulary
@@ -27,13 +27,13 @@ import org.apache.commons.rdf.simple.SimpleRDFTermFactory;
  */
 public class WebAC {
 
-    private static RDFTermFactory factory = new SimpleRDFTermFactory();
+    private static RDF rdf = new SimpleRDF();
 
     /* Namespace */
     public static String uri = "http://fedora.info/definitions/v4/webac#";
 
     /* Classes */
-    public static IRI Acl = factory.createIRI(uri + "Acl");
+    public static IRI Acl = rdf.createIRI(uri + "Acl");
 
     private WebAC() {
         // prevent instantiation
