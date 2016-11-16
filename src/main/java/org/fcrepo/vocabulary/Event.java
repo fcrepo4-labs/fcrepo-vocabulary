@@ -18,8 +18,8 @@
 package org.fcrepo.vocabulary;
 
 import org.apache.commons.rdf.api.IRI;
-import org.apache.commons.rdf.api.RDFTermFactory;
-import org.apache.commons.rdf.simple.SimpleRDFTermFactory;
+import org.apache.commons.rdf.api.RDF;
+import org.apache.commons.rdf.simple.SimpleRDF;
 
 /**
  * RDF Terms from the Fedora Event Vocabulary
@@ -27,16 +27,16 @@ import org.apache.commons.rdf.simple.SimpleRDFTermFactory;
  */
 public class Event {
 
-    private static RDFTermFactory factory = new SimpleRDFTermFactory();
+    private static RDF rdf = new SimpleRDF();
 
     /* Namespace */
     public static String uri = "http://fedora.info/definitions/v4/event#";
 
     /* Classes */
-    public static IRI ResourceCreation = factory.createIRI(uri + "ResourceCreation");
-    public static IRI ResourceDeletion = factory.createIRI(uri + "ResourceDeletion");
-    public static IRI ResourceModification = factory.createIRI(uri + "ResourceModification");
-    public static IRI ResourceRelocation = factory.createIRI(uri + "ResourceRelocation");
+    public static IRI ResourceCreation = rdf.createIRI(uri + "ResourceCreation");
+    public static IRI ResourceDeletion = rdf.createIRI(uri + "ResourceDeletion");
+    public static IRI ResourceModification = rdf.createIRI(uri + "ResourceModification");
+    public static IRI ResourceRelocation = rdf.createIRI(uri + "ResourceRelocation");
 
     private Event() {
         // prevent instantiation

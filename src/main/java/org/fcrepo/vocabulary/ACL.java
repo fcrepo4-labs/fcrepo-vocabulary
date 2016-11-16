@@ -18,8 +18,8 @@
 package org.fcrepo.vocabulary;
 
 import org.apache.commons.rdf.api.IRI;
-import org.apache.commons.rdf.api.RDFTermFactory;
-import org.apache.commons.rdf.simple.SimpleRDFTermFactory;
+import org.apache.commons.rdf.api.RDF;
+import org.apache.commons.rdf.simple.SimpleRDF;
 
 /**
  * RDF Terms from the W3C ACL Vocabulary
@@ -27,30 +27,30 @@ import org.apache.commons.rdf.simple.SimpleRDFTermFactory;
  */
 public class ACL {
 
-    private static RDFTermFactory factory = new SimpleRDFTermFactory();
+    private static RDF rdf = new SimpleRDF();
 
     /* Namespace */
     public static String uri = "http://www.w3.org/ns/auth/acl#";
 
     /* Classes */
-    public static IRI Access = factory.createIRI(uri + "Access");
-    public static IRI Append = factory.createIRI(uri + "Append");
-    public static IRI Authorization = factory.createIRI(uri + "Authorization");
-    public static IRI Control = factory.createIRI(uri + "Control");
-    public static IRI Read = factory.createIRI(uri + "Read");
-    public static IRI Write = factory.createIRI(uri + "Write");
+    public static IRI Access = rdf.createIRI(uri + "Access");
+    public static IRI Append = rdf.createIRI(uri + "Append");
+    public static IRI Authorization = rdf.createIRI(uri + "Authorization");
+    public static IRI Control = rdf.createIRI(uri + "Control");
+    public static IRI Read = rdf.createIRI(uri + "Read");
+    public static IRI Write = rdf.createIRI(uri + "Write");
 
     /* Properties */
-    public static IRI accessControl = factory.createIRI(uri + "accessControl");
-    public static IRI accessTo = factory.createIRI(uri + "accessTo");
-    public static IRI accessToClass = factory.createIRI(uri + "accessToClass");
-    public static IRI agent = factory.createIRI(uri + "agent");
-    public static IRI agentClass = factory.createIRI(uri + "agentClass");
-    public static IRI agentGroup = factory.createIRI(uri + "agentGroup");
-    public static IRI defaultForNew = factory.createIRI(uri + "defaultForNew");
-    public static IRI delegates = factory.createIRI(uri + "delegates");
-    public static IRI mode = factory.createIRI(uri + "mode");
-    public static IRI owner = factory.createIRI(uri + "owner");
+    public static IRI accessControl = rdf.createIRI(uri + "accessControl");
+    public static IRI accessTo = rdf.createIRI(uri + "accessTo");
+    public static IRI accessToClass = rdf.createIRI(uri + "accessToClass");
+    public static IRI agent = rdf.createIRI(uri + "agent");
+    public static IRI agentClass = rdf.createIRI(uri + "agentClass");
+    public static IRI agentGroup = rdf.createIRI(uri + "agentGroup");
+    public static IRI defaultForNew = rdf.createIRI(uri + "defaultForNew");
+    public static IRI delegates = rdf.createIRI(uri + "delegates");
+    public static IRI mode = rdf.createIRI(uri + "mode");
+    public static IRI owner = rdf.createIRI(uri + "owner");
 
     private ACL() {
         // prevent instantiation

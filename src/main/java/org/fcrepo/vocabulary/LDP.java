@@ -18,8 +18,8 @@
 package org.fcrepo.vocabulary;
 
 import org.apache.commons.rdf.api.IRI;
-import org.apache.commons.rdf.api.RDFTermFactory;
-import org.apache.commons.rdf.simple.SimpleRDFTermFactory;
+import org.apache.commons.rdf.api.RDF;
+import org.apache.commons.rdf.simple.SimpleRDF;
 
 /**
  * RDF Terms from the LDP Vocabulary
@@ -27,50 +27,50 @@ import org.apache.commons.rdf.simple.SimpleRDFTermFactory;
  */
 public class LDP {
 
-    private static RDFTermFactory factory = new SimpleRDFTermFactory();
+    private static RDF rdf = new SimpleRDF();
 
     /* Namespace */
     public static String uri = "http://www.w3.org/ns/ldp#";
 
     /* Classes */
-    public static IRI BasicContainer = factory.createIRI(uri + "BasicContainer");
-    public static IRI Container = factory.createIRI(uri + "Container");
-    public static IRI DirectContainer = factory.createIRI(uri + "DirectContainer");
-    public static IRI IndirectContainer = factory.createIRI(uri + "IndirectContainer");
-    public static IRI NonRDFSource = factory.createIRI(uri + "NonRDFSource");
-    public static IRI Resource = factory.createIRI(uri + "Resource");
-    public static IRI RDFSource = factory.createIRI(uri + "RDFSource");
+    public static IRI BasicContainer = rdf.createIRI(uri + "BasicContainer");
+    public static IRI Container = rdf.createIRI(uri + "Container");
+    public static IRI DirectContainer = rdf.createIRI(uri + "DirectContainer");
+    public static IRI IndirectContainer = rdf.createIRI(uri + "IndirectContainer");
+    public static IRI NonRDFSource = rdf.createIRI(uri + "NonRDFSource");
+    public static IRI Resource = rdf.createIRI(uri + "Resource");
+    public static IRI RDFSource = rdf.createIRI(uri + "RDFSource");
 
     /* Properties */
-    public static IRI contains = factory.createIRI(uri + "contains");
-    public static IRI hasMemberRelation = factory.createIRI(uri + "hasMemberRelation");
-    public static IRI inbox = factory.createIRI(uri + "inbox");
-    public static IRI insertedContentRelation = factory.createIRI(uri + "insertedContentRelation");
-    public static IRI isMemberOfRelation = factory.createIRI(uri + "isMemberOfRelation");
-    public static IRI member = factory.createIRI(uri + "member");
-    public static IRI membershipResource = factory.createIRI(uri + "membershipResource");
+    public static IRI contains = rdf.createIRI(uri + "contains");
+    public static IRI hasMemberRelation = rdf.createIRI(uri + "hasMemberRelation");
+    public static IRI inbox = rdf.createIRI(uri + "inbox");
+    public static IRI insertedContentRelation = rdf.createIRI(uri + "insertedContentRelation");
+    public static IRI isMemberOfRelation = rdf.createIRI(uri + "isMemberOfRelation");
+    public static IRI member = rdf.createIRI(uri + "member");
+    public static IRI membershipResource = rdf.createIRI(uri + "membershipResource");
 
     /* Prefer-related Classes */
-    public static IRI PreferContainment = factory.createIRI(uri + "PreferContainment");
-    public static IRI PreferMembership = factory.createIRI(uri + "PreferMembership");
-    public static IRI PreferMinimalContainer = factory.createIRI(uri + "PreferMinimalContainer");
+    public static IRI PreferContainment = rdf.createIRI(uri + "PreferContainment");
+    public static IRI PreferMembership = rdf.createIRI(uri + "PreferMembership");
+    public static IRI PreferMinimalContainer = rdf.createIRI(uri + "PreferMinimalContainer");
 
     /* Paging Classes */
-    public static IRI PageSortCriterion = factory.createIRI(uri + "PageSortCriterion");
-    public static IRI Ascending = factory.createIRI(uri + "Ascending");
-    public static IRI Descending = factory.createIRI(uri + "Descending");
-    public static IRI Page = factory.createIRI(uri + "Page");
+    public static IRI PageSortCriterion = rdf.createIRI(uri + "PageSortCriterion");
+    public static IRI Ascending = rdf.createIRI(uri + "Ascending");
+    public static IRI Descending = rdf.createIRI(uri + "Descending");
+    public static IRI Page = rdf.createIRI(uri + "Page");
 
     /* Paging Properties */
-    public static IRI constrainedBy = factory.createIRI(uri + "constrainedBy");
-    public static IRI pageSortCriteria = factory.createIRI(uri + "pageSortCriteria");
-    public static IRI pageSortPredicate = factory.createIRI(uri + "pageSortPredicate");
-    public static IRI pageSortOrder = factory.createIRI(uri + "pageSortOrder");
-    public static IRI pageSortCollation = factory.createIRI(uri + "pageSortCollation");
-    public static IRI pageSequence = factory.createIRI(uri + "pageSequence");
+    public static IRI constrainedBy = rdf.createIRI(uri + "constrainedBy");
+    public static IRI pageSortCriteria = rdf.createIRI(uri + "pageSortCriteria");
+    public static IRI pageSortPredicate = rdf.createIRI(uri + "pageSortPredicate");
+    public static IRI pageSortOrder = rdf.createIRI(uri + "pageSortOrder");
+    public static IRI pageSortCollation = rdf.createIRI(uri + "pageSortCollation");
+    public static IRI pageSequence = rdf.createIRI(uri + "pageSequence");
 
     /* Other Classes */
-    public static IRI MemberSubject = factory.createIRI(uri + "MemberSubject");
+    public static IRI MemberSubject = rdf.createIRI(uri + "MemberSubject");
 
     private LDP() {
         // prevent instantiation

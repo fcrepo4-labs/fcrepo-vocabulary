@@ -18,8 +18,8 @@
 package org.fcrepo.vocabulary;
 
 import org.apache.commons.rdf.api.IRI;
-import org.apache.commons.rdf.api.RDFTermFactory;
-import org.apache.commons.rdf.simple.SimpleRDFTermFactory;
+import org.apache.commons.rdf.api.RDF;
+import org.apache.commons.rdf.simple.SimpleRDF;
 
 /**
  * RDF Terms from the W3C PROV Ontology
@@ -27,101 +27,101 @@ import org.apache.commons.rdf.simple.SimpleRDFTermFactory;
  */
 public class PROV {
 
-    private static RDFTermFactory factory = new SimpleRDFTermFactory();
+    private static RDF rdf = new SimpleRDF();
 
     /* Namespace */
     public static String uri = "http://www.w3.org/ns/prov#";
 
     /* Classes */
-    public static IRI Activity = factory.createIRI(uri + "Activity");
-    public static IRI Agent = factory.createIRI(uri + "Agent");
-    public static IRI Entity = factory.createIRI(uri + "Entity");
+    public static IRI Activity = rdf.createIRI(uri + "Activity");
+    public static IRI Agent = rdf.createIRI(uri + "Agent");
+    public static IRI Entity = rdf.createIRI(uri + "Entity");
 
     /* Expanded Classes */
-    public static IRI Bundle = factory.createIRI(uri + "Bundle");
-    public static IRI Collection = factory.createIRI(uri + "Collection");
-    public static IRI EmptyCollection = factory.createIRI(uri + "EmptyCollection");
-    public static IRI Location = factory.createIRI(uri + "Location");
-    public static IRI Organization = factory.createIRI(uri + "Organization");
-    public static IRI Person = factory.createIRI(uri + "Person");
-    public static IRI SoftwareAgent = factory.createIRI(uri + "SoftwareAgent");
+    public static IRI Bundle = rdf.createIRI(uri + "Bundle");
+    public static IRI Collection = rdf.createIRI(uri + "Collection");
+    public static IRI EmptyCollection = rdf.createIRI(uri + "EmptyCollection");
+    public static IRI Location = rdf.createIRI(uri + "Location");
+    public static IRI Organization = rdf.createIRI(uri + "Organization");
+    public static IRI Person = rdf.createIRI(uri + "Person");
+    public static IRI SoftwareAgent = rdf.createIRI(uri + "SoftwareAgent");
 
     /* Qualified Classes */
-    public static IRI ActivityInfluence = factory.createIRI(uri + "ActivityInfluence");
-    public static IRI AgentInfluence = factory.createIRI(uri + "AgentInfluence");
-    public static IRI Association = factory.createIRI(uri + "Association");
-    public static IRI Attribution = factory.createIRI(uri + "Attribution");
-    public static IRI Communication = factory.createIRI(uri + "Communication");
-    public static IRI Delegation = factory.createIRI(uri + "Delegation");
-    public static IRI Derivation = factory.createIRI(uri + "Derivation");
-    public static IRI End = factory.createIRI(uri + "End");
-    public static IRI EntityInfluence = factory.createIRI(uri + "EntityInfluence");
-    public static IRI Generation = factory.createIRI(uri + "Generation");
-    public static IRI Influence = factory.createIRI(uri + "Influence");
-    public static IRI InstantaneousEvent = factory.createIRI(uri + "InstantaneousEvent");
-    public static IRI Invalidation = factory.createIRI(uri + "Invalidation");
-    public static IRI Plan = factory.createIRI(uri + "Plan");
-    public static IRI PrimarySource = factory.createIRI(uri + "PrimarySource");
-    public static IRI Quotation = factory.createIRI(uri + "Quotation");
-    public static IRI Revision = factory.createIRI(uri + "Revision");
-    public static IRI Start = factory.createIRI(uri + "Start");
-    public static IRI Usage = factory.createIRI(uri + "Usage");
+    public static IRI ActivityInfluence = rdf.createIRI(uri + "ActivityInfluence");
+    public static IRI AgentInfluence = rdf.createIRI(uri + "AgentInfluence");
+    public static IRI Association = rdf.createIRI(uri + "Association");
+    public static IRI Attribution = rdf.createIRI(uri + "Attribution");
+    public static IRI Communication = rdf.createIRI(uri + "Communication");
+    public static IRI Delegation = rdf.createIRI(uri + "Delegation");
+    public static IRI Derivation = rdf.createIRI(uri + "Derivation");
+    public static IRI End = rdf.createIRI(uri + "End");
+    public static IRI EntityInfluence = rdf.createIRI(uri + "EntityInfluence");
+    public static IRI Generation = rdf.createIRI(uri + "Generation");
+    public static IRI Influence = rdf.createIRI(uri + "Influence");
+    public static IRI InstantaneousEvent = rdf.createIRI(uri + "InstantaneousEvent");
+    public static IRI Invalidation = rdf.createIRI(uri + "Invalidation");
+    public static IRI Plan = rdf.createIRI(uri + "Plan");
+    public static IRI PrimarySource = rdf.createIRI(uri + "PrimarySource");
+    public static IRI Quotation = rdf.createIRI(uri + "Quotation");
+    public static IRI Revision = rdf.createIRI(uri + "Revision");
+    public static IRI Start = rdf.createIRI(uri + "Start");
+    public static IRI Usage = rdf.createIRI(uri + "Usage");
 
     /* Properties */
-    public static IRI actedOnBehalfOf = factory.createIRI(uri + "actedOnBehalfOf");
-    public static IRI endedAtTime = factory.createIRI(uri + "endedAtTime");
-    public static IRI startedAtTime = factory.createIRI(uri + "startedAtTime");
-    public static IRI used = factory.createIRI(uri + "used");
-    public static IRI wasAssociatedWith = factory.createIRI(uri + "wasAssociatedWith");
-    public static IRI wasAttributedTo = factory.createIRI(uri + "wasAttributedTo");
-    public static IRI wasDerivedFrom = factory.createIRI(uri + "wasDerivedFrom");
-    public static IRI wasGeneratedBy = factory.createIRI(uri + "wasGeneratedBy");
-    public static IRI wasInformedBy = factory.createIRI(uri + "wasInformedBy");
+    public static IRI actedOnBehalfOf = rdf.createIRI(uri + "actedOnBehalfOf");
+    public static IRI endedAtTime = rdf.createIRI(uri + "endedAtTime");
+    public static IRI startedAtTime = rdf.createIRI(uri + "startedAtTime");
+    public static IRI used = rdf.createIRI(uri + "used");
+    public static IRI wasAssociatedWith = rdf.createIRI(uri + "wasAssociatedWith");
+    public static IRI wasAttributedTo = rdf.createIRI(uri + "wasAttributedTo");
+    public static IRI wasDerivedFrom = rdf.createIRI(uri + "wasDerivedFrom");
+    public static IRI wasGeneratedBy = rdf.createIRI(uri + "wasGeneratedBy");
+    public static IRI wasInformedBy = rdf.createIRI(uri + "wasInformedBy");
 
     /* Expanded Properties */
-    public static IRI alternateOf = factory.createIRI(uri + "alternateOf");
-    public static IRI atLocation = factory.createIRI(uri + "atLocation");
-    public static IRI generated = factory.createIRI(uri + "generated");
-    public static IRI generatedAtTime = factory.createIRI(uri + "generatedAtTime");
-    public static IRI hadMember = factory.createIRI(uri + "hadMember");
-    public static IRI hadPrimarySource = factory.createIRI(uri + "hadPrimarySource");
-    public static IRI influenced = factory.createIRI(uri + "influenced");
-    public static IRI invalidated = factory.createIRI(uri + "invalidated");
-    public static IRI invalidatedAtTime = factory.createIRI(uri + "invalidatedAtTime");
-    public static IRI specializationOf = factory.createIRI(uri + "specializationOf");
-    public static IRI value = factory.createIRI(uri + "value");
-    public static IRI wasEndedBy = factory.createIRI(uri + "wasEndedBy");
-    public static IRI wasInvalidatedBy = factory.createIRI(uri + "wasInvalidatedBy");
-    public static IRI wasQuotedFrom = factory.createIRI(uri + "wasQuotedFrom");
-    public static IRI wasRevisionOf = factory.createIRI(uri + "wasRevisionOf");
-    public static IRI wasStartedBy = factory.createIRI(uri + "wasStartedBy");
+    public static IRI alternateOf = rdf.createIRI(uri + "alternateOf");
+    public static IRI atLocation = rdf.createIRI(uri + "atLocation");
+    public static IRI generated = rdf.createIRI(uri + "generated");
+    public static IRI generatedAtTime = rdf.createIRI(uri + "generatedAtTime");
+    public static IRI hadMember = rdf.createIRI(uri + "hadMember");
+    public static IRI hadPrimarySource = rdf.createIRI(uri + "hadPrimarySource");
+    public static IRI influenced = rdf.createIRI(uri + "influenced");
+    public static IRI invalidated = rdf.createIRI(uri + "invalidated");
+    public static IRI invalidatedAtTime = rdf.createIRI(uri + "invalidatedAtTime");
+    public static IRI specializationOf = rdf.createIRI(uri + "specializationOf");
+    public static IRI value = rdf.createIRI(uri + "value");
+    public static IRI wasEndedBy = rdf.createIRI(uri + "wasEndedBy");
+    public static IRI wasInvalidatedBy = rdf.createIRI(uri + "wasInvalidatedBy");
+    public static IRI wasQuotedFrom = rdf.createIRI(uri + "wasQuotedFrom");
+    public static IRI wasRevisionOf = rdf.createIRI(uri + "wasRevisionOf");
+    public static IRI wasStartedBy = rdf.createIRI(uri + "wasStartedBy");
 
     /* Qualified Properties */
-    public static IRI activity = factory.createIRI(uri + "activity");
-    public static IRI agent = factory.createIRI(uri + "agent");
-    public static IRI atTime = factory.createIRI(uri + "atTime");
-    public static IRI entity = factory.createIRI(uri + "entity");
-    public static IRI hadActivity = factory.createIRI(uri + "hadActivity");
-    public static IRI hadGeneration = factory.createIRI(uri + "hadGeneration");
-    public static IRI hadPlan = factory.createIRI(uri + "hadPlan");
-    public static IRI hadRole = factory.createIRI(uri + "hadRole");
-    public static IRI hadUsage = factory.createIRI(uri + "hadUsage");
-    public static IRI influencer = factory.createIRI(uri + "influencer");
-    public static IRI qualifiedAssociation = factory.createIRI(uri + "qualifiedAssociation");
-    public static IRI qualifiedAttribution = factory.createIRI(uri + "qualifiedAttribution");
-    public static IRI qualifiedCommunication = factory.createIRI(uri + "qualifiedCommunication");
-    public static IRI qualifiedDelegation = factory.createIRI(uri + "qualifiedDelegation");
-    public static IRI qualifiedDerivation = factory.createIRI(uri + "qualifiedDerivation");
-    public static IRI qualifiedEnd = factory.createIRI(uri + "qualifiedEnd");
-    public static IRI qualifiedGeneration = factory.createIRI(uri + "qualifiedGeneration");
-    public static IRI qualifiedInfluence = factory.createIRI(uri + "qualifiedInfluence");
-    public static IRI qualifiedInvalidation = factory.createIRI(uri + "qualifiedInvalidation");
-    public static IRI qualifiedPrimarySource = factory.createIRI(uri + "qualifiedPrimarySource");
-    public static IRI qualifiedQuotation = factory.createIRI(uri + "qualifiedQuotation");
-    public static IRI qualifiedRevision = factory.createIRI(uri + "qualifiedRevision");
-    public static IRI qualifiedStart = factory.createIRI(uri + "qualifiedStart");
-    public static IRI qualifiedUsage = factory.createIRI(uri + "qualifiedUsage");
-    public static IRI wasInfluencedBy = factory.createIRI(uri + "wasInfluencedBy");
+    public static IRI activity = rdf.createIRI(uri + "activity");
+    public static IRI agent = rdf.createIRI(uri + "agent");
+    public static IRI atTime = rdf.createIRI(uri + "atTime");
+    public static IRI entity = rdf.createIRI(uri + "entity");
+    public static IRI hadActivity = rdf.createIRI(uri + "hadActivity");
+    public static IRI hadGeneration = rdf.createIRI(uri + "hadGeneration");
+    public static IRI hadPlan = rdf.createIRI(uri + "hadPlan");
+    public static IRI hadRole = rdf.createIRI(uri + "hadRole");
+    public static IRI hadUsage = rdf.createIRI(uri + "hadUsage");
+    public static IRI influencer = rdf.createIRI(uri + "influencer");
+    public static IRI qualifiedAssociation = rdf.createIRI(uri + "qualifiedAssociation");
+    public static IRI qualifiedAttribution = rdf.createIRI(uri + "qualifiedAttribution");
+    public static IRI qualifiedCommunication = rdf.createIRI(uri + "qualifiedCommunication");
+    public static IRI qualifiedDelegation = rdf.createIRI(uri + "qualifiedDelegation");
+    public static IRI qualifiedDerivation = rdf.createIRI(uri + "qualifiedDerivation");
+    public static IRI qualifiedEnd = rdf.createIRI(uri + "qualifiedEnd");
+    public static IRI qualifiedGeneration = rdf.createIRI(uri + "qualifiedGeneration");
+    public static IRI qualifiedInfluence = rdf.createIRI(uri + "qualifiedInfluence");
+    public static IRI qualifiedInvalidation = rdf.createIRI(uri + "qualifiedInvalidation");
+    public static IRI qualifiedPrimarySource = rdf.createIRI(uri + "qualifiedPrimarySource");
+    public static IRI qualifiedQuotation = rdf.createIRI(uri + "qualifiedQuotation");
+    public static IRI qualifiedRevision = rdf.createIRI(uri + "qualifiedRevision");
+    public static IRI qualifiedStart = rdf.createIRI(uri + "qualifiedStart");
+    public static IRI qualifiedUsage = rdf.createIRI(uri + "qualifiedUsage");
+    public static IRI wasInfluencedBy = rdf.createIRI(uri + "wasInfluencedBy");
 
     private PROV() {
         // prevent instantiation
