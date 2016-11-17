@@ -15,21 +15,21 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.fcrepo.vocabulary;
+package org.fcrepo.api.vocabulary;
 
 /**
- * Test the Fedora Repository Vocabulary Class
+ * Test the LDP Vocabulary Class
  * @author acoburn
  */
-public class FedoraTest extends AbstractVocabularyTest {
+public class LDPTest extends AbstractVocabularyTest {
 
     @Override
     public String namespace() {
-        return "http://fedora.info/definitions/v4/repository#";
+        return "http://www.w3.org/ns/ldp#";
     }
 
     @Override
     public Class vocabulary() {
-        return Fedora.class;
+        return LDP.class;
     }
 }

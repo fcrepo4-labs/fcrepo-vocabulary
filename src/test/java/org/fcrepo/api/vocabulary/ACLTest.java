@@ -15,21 +15,21 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.fcrepo.vocabulary;
+package org.fcrepo.api.vocabulary;
 
 /**
- * Test the LDP Vocabulary Class
+ * Test the ACL Vocabulary Class
  * @author acoburn
  */
-public class LDPTest extends AbstractVocabularyTest {
+public class ACLTest extends AbstractVocabularyTest {
 
     @Override
     public String namespace() {
-        return "http://www.w3.org/ns/ldp#";
+        return "http://www.w3.org/ns/auth/acl#";
     }
 
     @Override
     public Class vocabulary() {
-        return LDP.class;
+        return ACL.class;
     }
 }
