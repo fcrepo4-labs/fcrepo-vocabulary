@@ -22,7 +22,7 @@ You can build and install this project with Maven:
 Maven (pom.xml)
 
     <dependency>
-      <groupId>org.fcrepo</groupId>
+      <groupId>org.fcrepo.api</groupId>
       <artifactId>fcrepo-vocabulary</artifactId>
       <version>${fcrepo-vocabulary.version}</version>
     </dependency>
@@ -30,7 +30,7 @@ Maven (pom.xml)
 Gradle (build.gradle)
 
     dependencies {
-        compile group: 'org.fcrepo', name: 'fcrepo-vocabulary', version: fcrepoVocabularyVersion
+        compile group: 'org.fcrepo.api', name: 'fcrepo-vocabulary', version: fcrepoVocabularyVersion
     }
 
 ## Maintainers

@@ -15,7 +15,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.fcrepo.vocabulary;
+package org.fcrepo.api.vocabulary;
 
 import static java.util.Arrays.stream;
 import static java.util.stream.Collectors.toSet;

@@ -7,7 +7,7 @@
     <version>4.7.0</version>
   </parent>
 
-  <groupId>org.fcrepo</groupId>
+  <groupId>org.fcrepo.api</groupId>
   <artifactId>fcrepo-vocabulary</artifactId>
   <version>0.1.0-SNAPSHOT</version>
   <name>Fedora Commons RDF Vocabularies</name>
@@ -42,7 +42,7 @@
     <slf4j.version>1.7.21</slf4j.version>
 
     <!-- osgi -->
-    <osgi.export.packages>org.fcrepo.vocabulary</osgi.export.packages>
+    <osgi.export.packages>org.fcrepo.api.vocabulary</osgi.export.packages>
     <osgi.import.packages>*</osgi.import.packages>
   </properties>
 

@@ -15,21 +15,27 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.fcrepo.vocabulary;
+package org.fcrepo.api.vocabulary;
+
+import org.apache.commons.rdf.api.IRI;
+import org.apache.commons.rdf.api.RDF;
+import org.apache.commons.rdf.simple.SimpleRDF;
 
 /**
- * Test the ACL Vocabulary Class
+ * RDF Terms from the Fedora WebAC Vocabulary
  * @author acoburn
  */
-public class ACLTest extends AbstractVocabularyTest {
+public class WebAC {
 
-    @Override
-    public String namespace() {
-        return "http://www.w3.org/ns/auth/acl#";
-    }
+    private static RDF rdf = new SimpleRDF();
 
-    @Override
-    public Class vocabulary() {
-        return ACL.class;
+    /* Namespace */
+    public static String uri = "http://fedora.info/definitions/v4/webac#";
+
+    /* Classes */
+    public static IRI Acl = rdf.createIRI(uri + "Acl");
+
+    private WebAC() {
+        // prevent instantiation
     }
 }
