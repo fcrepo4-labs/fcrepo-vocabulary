@@ -19,7 +19,9 @@ package org.fcrepo.vocabulary;
 
 import static java.util.Arrays.stream;
 import static java.util.stream.Collectors.toSet;
+import static org.apache.http.impl.client.HttpClientBuilder.create;
 import static org.apache.jena.rdf.model.ModelFactory.createDefaultModel;
+import static org.apache.jena.riot.web.HttpOp.setDefaultHttpClient;
 import static org.apache.jena.riot.RDFDataMgr.read;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
@@ -31,6 +33,7 @@ import java.util.Set;
 import java.lang.reflect.Field;
 import java.util.stream.Stream;
 
+import org.apache.http.impl.client.LaxRedirectStrategy;
 import org.apache.jena.rdf.model.Model;
 import org.apache.jena.rdf.model.Resource;
 import org.junit.Test;
@@ -46,6 +49,10 @@ public abstract class AbstractVocabularyTest {
     public abstract String namespace();
 
     public abstract Class vocabulary();
+
+    static {
+        setDefaultHttpClient(create().setRedirectStrategy(new LaxRedirectStrategy()).build());
+    }
 
     @Test
     public void testEventVocabulary() {
