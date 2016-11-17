@@ -9,7 +9,7 @@
 
   <groupId>org.fcrepo</groupId>
   <artifactId>fcrepo-vocabulary</artifactId>
-  <version>0.0.1-SNAPSHOT</version>
+  <version>0.1.0-SNAPSHOT</version>
   <name>Fedora Commons RDF Vocabularies</name>
   <description>RDF Vocabularies in use by Fedora Commons</description>
   <url>http://fedorarepository.org</url>
