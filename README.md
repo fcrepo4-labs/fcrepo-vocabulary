@@ -35,6 +35,5 @@ Gradle (build.gradle)
 
 ## Maintainers
 
-  * [Aaron Coburn](https://github.com/acoburn)
   * [A. Soroka](https://github.com/ajs6f)
 
